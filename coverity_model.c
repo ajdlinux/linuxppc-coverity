@@ -1,5 +1,6 @@
 /*
- * Coverity Scan model
+ * Coverity Scan model for Linux on PowerPC
+ * Based off the Coverity Scan model for Linux on x86 from Dave Jones et al
  *
  * This is a modeling file for Coverity Scan.
  * Modeling helps to avoid false positives.
@@ -40,7 +41,7 @@ void unreachable(void) {
 /* Can never be <= 0. */
 int num_online_cpus(void)
 {
-	return 4096;
+	return 32;
 }
 
 /* don't treat these as "always true" (silence DEADCODE false positives) */
