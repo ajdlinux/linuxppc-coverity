@@ -1,3 +1,4 @@
+# This is based off a combination of {ppc64, powernv, pseries}_defconfig
 CONFIG_ACENIC=m
 CONFIG_ACENIC_OMIT_TIGON_I=y
 CONFIG_ADB_PMU=y
